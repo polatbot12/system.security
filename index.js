@@ -36,15 +36,15 @@ const dateFormat = require("dateformat");
 var table = require("table").table;
 const Discord = require("discord.js");
 const cmd = require("node-cmd");
-const prefix = "m.";
+const prefix = "";
 const cooldown = new Set();
 const cdtime = 7;
-client.login("ODI4MzMxNjY3MDEzMTA3NzIy.YGoB-w.Zo6cIFB_suucFL3TX6GiJcLxgC4");
+client.login("token");
 
 client.on("ready", () => {
 setInterval(() => {
   client.user.setActivity(
-  `${prefix}help - https://mrfox.ga/`,
+  `${prefix}help -System-security`,
   );
 }, 2000);
 })
@@ -66,7 +66,7 @@ client.on("guildCreate" , bot => {
   if (message.content.startsWith(prefix + "mute")) {
     if (!message.guild.member(message.author).hasPermission("MUTE_MEMBERS"))
       return message.channel.send(
-        "**Please Check Your Permission MUTE_MEBMERS **<a:jano_26:799630865474256972>"
+        "**Please Check Your Permission MUTE_MEBMERS **"
       );
     if (!message.guild.member(client.user).hasPermission("MUTE_MEMBERS"))
       return message.channel.send(
@@ -90,7 +90,7 @@ client.on("guildCreate" , bot => {
       });
     });
     message.guild.member(user).roles.add(mute);
-    message.channel.send(`**${user.username} has been muted** <a:jano_27:799630916820795422>`);
+    message.channel.send(`**${user.username} has been muted**`);
   }
   if (message.content.toLowerCase() === `${prefix}help mute`) {
     let mute = new Discord.MessageEmbed()
@@ -121,7 +121,7 @@ let result = Math.floor((Math.random() * replies.length));
     var gif = new Discord.MessageEmbed()
          
          .setTitle("> __Animal Gif__")
-         .setURL(`https://mrfox.ga/`)
+         .setURL(``)
          .setDescription(`> tag: <@${user.id}>`)
          .setColor(color)
          .setFooter(`Request by: ${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
@@ -150,7 +150,7 @@ let result = Math.floor((Math.random() * replies.length));
     var gif = new Discord.MessageEmbed()
          
          .setTitle("> __Anime Gif__")
-         .setURL(`https://mrfox.ga/`)
+         .setURL(``)
          .setDescription(`> tag: <@${user.id}>`)
          .setColor(color)
          .setFooter(`Request by: ${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
@@ -180,7 +180,7 @@ let result = Math.floor((Math.random() * replies.length));
     var gif = new Discord.MessageEmbed()
          
          .setTitle("> __Baby Gif__")
-         .setURL(`https://mrfox.ga/`)
+         .setURL(``)
          .setDescription(`> tag: <@${user.id}>`)
          .setColor(color)
          .setFooter(`Request by: ${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
@@ -209,7 +209,7 @@ let result = Math.floor((Math.random() * replies.length));
     var gif = new Discord.MessageEmbed()
          
          .setTitle("> __Boy Gif__")
-         .setURL(`https://mrfox.ga/`)
+         .setURL(``)
          .setDescription(`> tag: <@${user.id}>`)
          .setColor(color)
          .setFooter(`Request by: ${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
@@ -238,7 +238,7 @@ let result = Math.floor((Math.random() * replies.length));
     var gif = new Discord.MessageEmbed()
          
          .setTitle("> __Couple Gif__")
-         .setURL(`https://mrfox.ga/`)
+         .setURL(``)
          .setDescription(`> tag: <@${user.id}>`)
          .setColor(color)
          .setFooter(`Request by: ${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
@@ -282,7 +282,7 @@ let result = Math.floor((Math.random() * replies.length));
     var gif = new Discord.MessageEmbed()
          
          .setTitle("> __Emoji Gif__")
-         .setURL(`https://mrfox.ga/`)
+         .setURL(``)
          .setDescription(`> tag: <@${user.id}>`)
          .setColor(color)
          .setFooter(`Request by: ${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
@@ -311,7 +311,7 @@ let result = Math.floor((Math.random() * replies.length));
     var gif = new Discord.MessageEmbed()
          
          .setTitle("> __Girl Gif__")
-         .setURL(`https://mrfox.ga/`)
+         .setURL(``)
          .setDescription(`> tag: <@${user.id}>`)
          .setColor(color)
          .setFooter(`Request by: ${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
@@ -340,7 +340,7 @@ let result = Math.floor((Math.random() * replies.length));
     var gif = new Discord.MessageEmbed()
          
          .setTitle("> __Neon Gif__")
-         .setURL(`https://mrfox.ga/`)
+         .setURL(``)
          .setDescription(`> tag: <@${user.id}>`)
          .setColor(color)
          .setFooter(`Request by: ${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
@@ -369,7 +369,7 @@ let result = Math.floor((Math.random() * replies.length));
     var gif = new Discord.MessageEmbed()
          
          .setTitle("> __Sad Gif__")
-         .setURL(`https://mrfox.ga/`)
+         .setURL(``)
          .setDescription(`> tag: <@${user.id}>`)
          .setColor(color)
          .setFooter(`Request by: ${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
@@ -398,7 +398,7 @@ let result = Math.floor((Math.random() * replies.length));
     var gif = new Discord.MessageEmbed()
          
          .setTitle("> __Smoking Gif__")
-         .setURL(`https://mrfox.ga/`)
+         .setURL(``)
          .setDescription(`> tag: <@${user.id}>`)
          .setColor(color)
          .setFooter(`Request by: ${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
@@ -547,9 +547,9 @@ client.on("message", message => {
   if (message.content.startsWith(prefix + "support")) {
     if(!message.channel.guild) return message.reply('```This command only for servers```');
     const embed = new Discord.MessageEmbed()
-      .setDescription(`__[Join Server](https://discord.gg/26pM9JYU56)__ *join to server bot*
+      .setDescription(`__[Join Server]()__ *join to server bot*
 __[Invite Bot](https://discord.com/api/oauth2/authorize?client_id=${client.user.id}&permissions=5271285182&scope=bot)__ *thank you for invite bot* 
-__[Website](https://mrfox.ga/)__ *website bot dashboard in coming soon*`)
+__[Website]()__ *website bot dashboard in coming soon*`)
       .setTimestamp()
       .setFooter(`By: ${message.author.tag}`)
       .setAuthor(client.user.username)
@@ -586,9 +586,9 @@ __Gifs Commands__
 __This is a little prefix__
 > [ ${prefix} ]
 `;
-    var addserver = `https://discord.com/api/oauth2/authorize?client_id=${client.user.id}&permissions=5271285182&scope=bot`;
-    var SUPPORT = `https://discord.gg/26pM9JYU56`;
-    var website = `https://mrfox.ga/`;
+    var addserver = ``;
+    var SUPPORT = ``;
+    var website = ``;
     var EMBED = new Discord.MessageEmbed()
       .setColor(color)
       .setAuthor(client.user.username, client.user.avatarURL())
@@ -621,9 +621,9 @@ __Music Commands__
 __This is a little prefix__
 > [ ${prefix} ]
 `;
-    var addserver = `https://discord.com/api/oauth2/authorize?client_id=${client.user.id}&permissions=5271285182&scope=bot`;
-    var SUPPORT = `https://discord.gg/26pM9JYU56`;
-    var website = `https://mrfox.ga/`;
+    var addserver = ``;
+    var SUPPORT = ``;
+    var website = ``;
     var EMBED = new Discord.MessageEmbed()
       .setColor(color)
       .setAuthor(client.user.username, client.user.avatarURL())
@@ -661,9 +661,9 @@ __Help Commands__
 __This is a little prefix__
 > [ ${prefix} ]
 `;
-    var addserver = `https://discord.com/api/oauth2/authorize?client_id=${client.user.id}&permissions=5271285182&scope=bot`;
-    var SUPPORT = `https://discord.gg/26pM9JYU56`;
-    var website = `https://mrfox.ga/`;
+    var addserver = ``;
+    var SUPPORT = ``;
+    var website = ``;
     var EMBED = new Discord.MessageEmbed()
       .setColor(color)
       .setAuthor(client.user.username, client.user.avatarURL())
@@ -702,8 +702,8 @@ __This is a little prefix__
 > [ ${prefix} ]
 `;
     var addserver = `https://discord.com/api/oauth2/authorize?client_id=${client.user.id}&permissions=5271285182&scope=bot`;
-    var SUPPORT = `https://discord.gg/26pM9JYU56`;
-    var website = `https://mrfox.ga/`;
+    var SUPPORT = ``;
+    var website = ``;
     var EMBED = new Discord.MessageEmbed()
       .setColor(color)
       .setAuthor(client.user.username, client.user.avatarURL())
@@ -732,8 +732,8 @@ __This is a little prefix__
 > [ ${prefix} ]
 `;
     var addserver = `https://discord.com/api/oauth2/authorize?client_id=${client.user.id}&permissions=5271285182&scope=bot`;
-    var SUPPORT = `https://discord.gg/26pM9JYU56`;
-    var website = `https://mrfox.ga/`;
+    var SUPPORT = ``;
+    var website = ``;
     var EMBED = new Discord.MessageEmbed()
       .setColor(color)
       .setAuthor(client.user.username, client.user.avatarURL())
@@ -761,8 +761,8 @@ __This is a little prefix__
 > [ ${prefix} ]
 `;
     var addserver = `https://discord.com/api/oauth2/authorize?client_id=${client.user.id}&permissions=5271285182&scope=bot`;
-    var SUPPORT = `https://discord.gg/26pM9JYU56`;
-    var website = `https://mrfox.ga/`;
+    var SUPPORT = ``;
+    var website = ``;
     var EMBED = new Discord.MessageEmbed()
       .setColor(color)
       .setAuthor(client.user.username, client.user.avatarURL())
@@ -1972,7 +1972,7 @@ client.on("message", message => {
     const tnx = new Discord.MessageEmbed()
       .setAuthor(client.user.username, client.user.avatarURL())
       .setThumbnail(
-        `https://cdn.discordapp.com/attachments/772758556848029727/802994883378806824/image0.jpg`
+        ``
       )
       .setColor("#303135")
       .setTitle(`Info about ${client.user.username}.`)
@@ -1993,7 +1993,7 @@ client.on("message", message => {
       .addField("**My ID**", `[ ${client.user.id} ]`, true)
       .addField("**DiscordJS**", `[ ${Discord.version} ]`, true)
       .addField("**NodeJS**", `[ ${process.version} ]`, true)
-      .addField("**Bot-Owners**", `<@596060641740193856>`, true)
+      .addField("**Bot-Owners**", `<@669072128922091541>`, true)
       .addField("**My Prefix**", `[ ${prefix} ]`, true)
       .addField("**My Language**", `[ Java Script ]`, true)
       .setFooter(`${message.author.username}`);
@@ -2190,7 +2190,7 @@ client.on('message',async message => {
 
 
 client.on('message', message => {
-  if (message.content.startsWith("<@764487416748310570>")) {
+  if (message.content.startsWith("")) {
     if(!message.channel.guild) return message.reply('```This command only for servers```');
    let embed = new Discord.MessageEmbed()
      .setAuthor(client.user.username, client.user.avatarURL())
@@ -2202,14 +2202,14 @@ client.on('message', message => {
  To report bot send email for :
      > __|| [ Mr.FoxDevelopment@gmail.com ] ||__
 __Support__
-     > __[Discord Server](https://discord.gg/26pM9JYU56)__ - __[Invite Bot](https://discord.com/api/oauth2/authorize?client_id=${client.user.id}&permissions=5271285182&scope=bot)__ - __[Website](https://mrfox.ga/)__`)
+     > __[Discord Server]()__ - __[Invite Bot](https://discord.com/api/oauth2/authorize?client_id=${client.user.id}&permissions=5271285182&scope=bot)__ - __[Website]()__`)
    message.reply('Hi ✨')
   message.channel.send(embed);
     }
 }); 
 
 
-const leave = ["596060641740193856"] //owner id
+const leave = ["669072128922091541"] //owner id
  
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
