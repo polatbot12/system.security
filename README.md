@@ -1,11 +1,8 @@
-create by __**Mr.BAD**__ 
+# create by: **POLAT BOT**
 
-•••••••
+# **[Discord Server](https://discord.gg/ttx9b2YcaP)**
 
-**[Website](https://securitexbot.wixsite.com/security)**
-
-
-**[Invite Bot](https://discord.com/oauth2/authorize?client_id=764487416748310570&scope=bot&permissions=940059838&response_type=code)**
+# Dastkari hic maka la index perifx token dane tawaw
 
 
-**[Discord Server](https://discord.gg/Zhwg47uFun)**
+
