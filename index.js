@@ -2200,7 +2200,7 @@ client.on('message', message => {
      > Hello sir how can i help you ?
      > Please type : __${prefix}help__ to see all commands
  To report bot send email for :
-     > __|| [ Mr.FoxDevelopment@gmail.com ] ||__
+     > __|| [ polatbot12@gmail.com ] ||__
 __Support__
      > __[Discord Server]()__ - __[Invite Bot](https://discord.com/api/oauth2/authorize?client_id=${client.user.id}&permissions=5271285182&scope=bot)__ - __[Website]()__`)
    message.reply('Hi ✨')
