@@ -1,7 +1,7 @@
 {
   "name": "Polat.Bot",
   "version": "0.0.1",
-  "description": "Polat.bot",
+  "description": "Polatbot",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
